@@ -1,0 +1,6 @@
+data
+work
+results
+.nextflow*
+.R*
+*.Rproj
