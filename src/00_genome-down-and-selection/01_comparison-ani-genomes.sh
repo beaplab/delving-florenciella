@@ -36,5 +36,12 @@ sourmash plot data/statistics/compar_genomes.dist --output-dir results/figures
 sourmash plot data/statistics/compar_trans.dist --output-dir results/figures
 
 
+# based on these results we chose the genomes from the SMAGs dataset 
+# we will copy them to analyze them later on 
+
+gzip data/genomic_data/genomes/*_CDS.fna
+ln -s ~/projects/delving_into_florenciella/data/genomic_data/genomes/TARA_ARC_108_MAG_00262_CDS.fna.gz data/genomic_data/transcriptomes/nucleotide_version/TARA_ARC_108_MAG_00262_CDS.fna.gz 
+ln -s ~/projects/delving_into_florenciella/data/genomic_data/genomes/TARA_MED_95_MAG_00475_CDS.fna.gz  data/genomic_data/transcriptomes/nucleotide_version/TARA_MED_95_MAG_00475_CDS.fna.gz 
+ln -s ~/projects/delving_into_florenciella/data/genomic_data/genomes/TARA_SOC_28_MAG_00069_CDS.fna.gz  data/genomic_data/transcriptomes/nucleotide_version/TARA_SOC_28_MAG_00069_CDS.fna.gz 
 
 

@@ -4,3 +4,4 @@ results
 .nextflow*
 .R*
 *.Rproj
+.Rproj.user

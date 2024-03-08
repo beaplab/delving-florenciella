@@ -64,6 +64,16 @@ file_copy(selsmags_aa_path,
                            '.gmove.pep.faa'), 
           overwrite = T)
 
+selsmags_cds_path <- str_c('~/scratch4/sMAGs/Genes/Nucleotides/', 
+                      selection.smags,
+                      '_CDS.fna')
+
+file_copy(selsmags_cds_path,
+          new_path = str_c('~/projects/delving_into_florenciella/data/genomic_data/genomes/',
+                           selection.smags,
+                           '_CDS.fna'), 
+          overwrite = T)
+
 # Eukprot transcriptomes --------------------------------------------------
 
 sel_transcriptomes <- list.files('~/scratch4/eukprot/proteins',
